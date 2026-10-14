@@ -1,0 +1,5 @@
+{
+  "dataset_root": "D:/AQA/dataset/keraal",
+  "artifact_root": "../artifacts",
+  "official_code_root": "D:/AQA/KeraalDataset"
+}

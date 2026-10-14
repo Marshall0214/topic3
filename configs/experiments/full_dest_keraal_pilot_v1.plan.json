@@ -1,0 +1,64 @@
+{
+  "status": "design_only_not_an_executable_training_config",
+  "date": "2026-10-14",
+  "model_source": "upstream/dest/libs/models/DeST_linearformer.py::Model",
+  "source_commit": "319e1f10f310e08a198fba3a32a4d82416ecb15f",
+  "task": "annotated principal event; normal + Arms + Trunk; unknown255",
+  "dataset_root": "D:/AQA/dataset/keraal",
+  "fold": 0,
+  "train_count": 133,
+  "validation_count": 41,
+  "load_test": false,
+  "sampling_clock": "annotation15",
+  "length": 256,
+  "seed": 17,
+  "pilot_epochs": 20,
+  "network": {
+    "n_features": 64,
+    "n_classes": 3,
+    "n_layers": 10,
+    "n_refine_layers": 10,
+    "n_stages": 4,
+    "n_stages_asb": 2,
+    "n_stages_brb": 3,
+    "SFI_layer": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "dataset": "PKU-subject"
+  },
+  "variants": {
+    "M0": {
+      "in_channel": 3,
+      "reference": false
+    },
+    "M1": {
+      "in_channel": 9,
+      "reference": "training correct subject-disjoint; query/reference/difference; alignment to be frozen"
+    }
+  },
+  "training_entry": "scripts/train_full_dest.py (not implemented yet)",
+  "loss": "author CE+BCE with adapted known masks; GSTMSE pending partial-label review",
+  "selection": "to freeze before real training; never use test for selection",
+  "augmentation_plan": {
+    "document": "DATA_AUGMENTATION_PLAN.md",
+    "status": "design_only_pending_label_semantics_and_implementation",
+    "default": "A0_no_augmentation",
+    "first_ablation": "A1_mild_monotonic_local_time_warp",
+    "later_ablation": [
+      "A2_smooth_low_amplitude_noise",
+      "A3_train_only_reference_diversity"
+    ],
+    "validation_augmentation": false,
+    "test_augmentation": false,
+    "same_optimizer_updates": true,
+    "unknown_label": 255
+  }
+}

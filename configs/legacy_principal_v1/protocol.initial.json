@@ -1,0 +1,40 @@
+{
+  "status": "draft_before_data_audit",
+  "task": "annotated_primary_error_spatiotemporal_localization",
+  "primary_annotator": "A",
+  "primary_groups": [
+    "group1A",
+    "group2A"
+  ],
+  "primary_parts": [
+    "Arms",
+    "Trunk"
+  ],
+  "raw_part_mapping": {
+    "LeftArm": "Arms",
+    "RightArm": "Arms",
+    "BothArms": "Arms",
+    "Spine": "Trunk"
+  },
+  "split_unit": "verified_global_subject_identity",
+  "split_status": "not_generated",
+  "references": {
+    "train_only": true,
+    "correct_only": true,
+    "same_exercise": true,
+    "exclude_query_subject": true
+  },
+  "group3_use": "optional_extension_not_primary_temporal_ground_truth",
+  "missing_temporal_label_is_normal": false,
+  "timing": "verify_media_and_skeleton_mapping_per_recording",
+  "primary_metrics": [
+    "temporal_event_f1",
+    "temporal_and_part_joint_f1",
+    "normal_recording_false_alarm_rate"
+  ],
+  "temporal_iou_thresholds": [
+    0.3,
+    0.5
+  ],
+  "training_started": false
+}

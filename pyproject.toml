@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topic3-motion-analysis"
+version = "0.1.0"
+description = "Reference-based motion deviation research workspace"
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "scikit-learn", "torch", "numba", "matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["topic3*", "keraal_loc*"]

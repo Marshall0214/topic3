@@ -1,0 +1,9 @@
+{
+  "dataset_root": "D:/AQA/dataset/keraal",
+  "historical_manifest_dir": "manifests/historical/principal_v1",
+  "upstream_dest": "upstream/dest",
+  "historical_results": "runs/historical",
+  "default_python": "C:/Users/admin/anaconda3/python.exe",
+  "timebase": "annotation15",
+  "note": "Manifest labels and splits copied exactly; not a newly frozen protocol."
+}

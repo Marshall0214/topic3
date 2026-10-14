@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "note": "Sources remain local under ignored upstream/. Restore from official repositories; never overwrite an existing snapshot. These pins identify audited versions, not latest HEAD.",
+  "sources": [
+    {
+      "name": "DeST",
+      "repository": "https://github.com/lyhisme/DeST.git",
+      "commit": "319e1f10f310e08a198fba3a32a4d82416ecb15f",
+      "local_path": "upstream/dest",
+      "required_for": "DeST model import and synthetic checks"
+    },
+    {
+      "name": "ExeChecker",
+      "repository": "https://github.com/EvenGu/ExeChecker.git",
+      "commit": "1e6df144bb49fd1173b027115d07a332f018c682",
+      "local_path": "upstream/ExeChecker_snapshot",
+      "required_for": "Optional ExeChecker audit; upstream trainer has documented missing modules"
+    }
+  ]
+}

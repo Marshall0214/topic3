@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-14",
+  "scope": "Keraal papers first; no implementation or training",
+  "pdf_sha256": {
+    "https://hal.science/hal-04857956/document": "ac0bbd878fe3d69853c85a95da94ca350192e034d4d4167ff4a8a7ca4ad6cb64",
+    "https://arxiv.org/pdf/2504.13866": "fe7efd25ae4862ff20ae33b69150e7cbed0492ea75c21487e5dd75546cfb528f",
+    "https://keraal.enstb.org/publication/Nguyen2024IJCNN.pdf": "4bf996c550b36b7d0b0bc5c840088ad6db18226bd52a5d4633fe73291485e8e4"
+  },
+  "findings": {
+    "PhysioFormer": "explicitly removes data augmentation in section3.3",
+    "HyperPhysio": "augmentation listed as future work in conclusion; length interpolation is preprocessing",
+    "DeepRehabPile": "no Keraal augmentation ablation verified in current full text",
+    "ECMR2023": "no explicit random augmentation recipe verified in full text",
+    "WeightedShapeDBA2024": "mentions Keraal but experiments use KIMORE; excluded from direct evidence"
+  },
+  "model_edits": false,
+  "training_started": false
+}
